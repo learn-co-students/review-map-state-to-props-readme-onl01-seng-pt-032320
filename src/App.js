@@ -35,7 +35,8 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   debugger;
-  return { items: state.items }
+  return { itemshoppingListItemReducer: state.items }
 }
 
 export default connect(mapStateToProps)(App);
+//same thing here: export default connect( state => ({ items: state.items }) )(App);
